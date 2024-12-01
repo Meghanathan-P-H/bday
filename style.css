@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url("/images/imagebg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#note{
+  font-family: "Jost", sans-serif;
+border:2px  rgb(255, 0, 0);
+border-style: dotted;
+padding: 5px;
+}
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.Picture {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+}
+.Picture-video {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+}
+.Picture-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.Picture-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Picture-note-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Network {
+  display: inline-block;
+  padding: 0 5px;
+}
+.Network-video {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.Network img {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
+
+.Network-video img {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
+/* --------------------- */
+/* Other styles          */
+/* --------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Caveat', serif;
+  overflow: hidden;
+}
+
+audio {
+  /* Reset default styling */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Webkit (Chrome, Safari) */
+audio::-webkit-media-controls-enclosure {
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+/* Firefox */
+audio::-moz-range-track {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Play/Pause Button Styling */
+audio::-webkit-media-controls-play-button {
+  background-color: #15d63b;
+  border-radius: 50%;
+}
+
+audio::-moz-range-thumb {
+  background-color: #efecec;
+  border-radius: 50%;
+}
+
+/* Progress Bar */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #27d63b;
+}
+
+audio::-webkit-media-controls-play-button:hover,
+audio::-moz-range-thumb:hover {
+  background-color: #666;
+}
+
+/* Volume Slider */
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider-container {
+  background-color: #2ede5d;
+  border-radius: 10px;
+}
